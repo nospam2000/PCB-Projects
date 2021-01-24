@@ -1,36 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:FF
-LIBS:27c160-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MAPLE_MINI U1
+L FF:MAPLE_MINI U1
 U 1 1 55AF4EC7
 P 3550 2200
 F 0 "U1" H 3550 2200 60  0000 C CNN
@@ -56,7 +25,7 @@ F 3 "" H 3550 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MAPLE_MINI_48 U2
+L FF:MAPLE_MINI_48 U2
 U 1 1 55AF4F2A
 P 7000 2200
 F 0 "U2" H 7000 2600 60  0000 C CNN
@@ -401,45 +370,45 @@ A18
 Text Label 8250 2250 0    60   ~ 0
 A19
 $Comp
-L CONN_01X03 P2
+L Jumper:Jumper_3_Open P2
 U 1 1 55F952CF
-P 7450 1300
-F 0 "P2" H 7450 1500 50  0000 C CNN
-F 1 "A18_SEL" V 7550 1300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7450 1300 60  0001 C CNN
-F 3 "" H 7450 1300 60  0000 C CNN
-	1    7450 1300
-	1    0    0    -1  
+P 7250 1300
+F 0 "P2" H 7250 1500 50  0000 C CNN
+F 1 "A18_SEL" V 7350 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7250 1300 60  0001 C CNN
+F 3 "~" H 7250 1300 60  0000 C CNN
+	1    7250 1300
+	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X03 P1
+L Jumper:Jumper_3_Open P1
 U 1 1 55F953E8
-P 6700 1300
-F 0 "P1" H 6700 1500 50  0000 C CNN
-F 1 "A19_SEL" V 6800 1300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6700 1300 60  0001 C CNN
-F 3 "" H 6700 1300 60  0000 C CNN
-	1    6700 1300
-	1    0    0    -1  
+P 6500 1300
+F 0 "P1" H 6500 1500 50  0000 C CNN
+F 1 "A19_SEL" V 6600 1300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6500 1300 60  0001 C CNN
+F 3 "~" H 6500 1300 60  0000 C CNN
+	1    6500 1300
+	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 55F954A1
 P 6150 1600
 F 0 "R2" V 6230 1600 50  0000 C CNN
 F 1 "1K" V 6150 1600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 1600 30  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 1600 30  0001 C CNN
 F 3 "" H 6150 1600 30  0000 C CNN
 	1    6150 1600
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L Device:R R1
 U 1 1 55F954FE
 P 6150 900
 F 0 "R1" V 6230 900 50  0000 C CNN
 F 1 "1K" V 6150 900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 900 30  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 900 30  0001 C CNN
 F 3 "" H 6150 900 30  0000 C CNN
 	1    6150 900 
 	0    1    1    0   
@@ -453,25 +422,29 @@ VCC
 Text Label 5800 1600 0    60   ~ 0
 VSS
 Wire Wire Line
-	6300 1600 7250 1600
+	6300 1600 6500 1600
 Wire Wire Line
-	7250 1600 7250 1400
+	7250 1600 7250 1550
 Wire Wire Line
-	6500 1400 6500 1600
+	6500 1550 6500 1600
 Connection ~ 6500 1600
 Wire Wire Line
-	6300 900  7250 900 
+	6300 900  6500 900 
 Wire Wire Line
-	7250 900  7250 1200
+	7250 900  7250 1050
 Wire Wire Line
-	6500 1200 6500 900 
+	6500 1050 6500 900 
 Connection ~ 6500 900 
 Wire Wire Line
-	6500 1300 6300 1300
+	6350 1300 6150 1300
 Wire Wire Line
-	7250 1300 7050 1300
-Text Label 7050 1300 0    60   ~ 0
+	7100 1300 6900 1300
+Text Label 6950 1300 0    60   ~ 0
 A18
-Text Label 6300 1300 0    60   ~ 0
+Text Label 6200 1300 0    60   ~ 0
 A19
+Wire Wire Line
+	6500 1600 7250 1600
+Wire Wire Line
+	6500 900  7250 900 
 $EndSCHEMATC

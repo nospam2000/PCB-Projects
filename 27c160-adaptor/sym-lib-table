@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 27c160-rescue)(type Legacy)(uri ${KIPRJMOD}/27c160-rescue.lib)(options "")(descr ""))
+  (lib (name FF)(type Legacy)(uri ${KIPRJMOD}/FF.lib)(options "")(descr ""))
+)
