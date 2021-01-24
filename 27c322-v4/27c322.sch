@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:27c322-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -367,23 +366,23 @@ A18
 Text Label 8250 2250 0    60   ~ 0
 A19
 $Comp
-L 27c322-rescue:R R2
+L Device:R R2
 U 1 1 55F954A1
 P 6050 1350
 F 0 "R2" V 6130 1350 50  0000 C CNN
 F 1 "10K" V 6050 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 1350 30  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5980 1350 30  0001 C CNN
 F 3 "" H 6050 1350 30  0000 C CNN
 	1    6050 1350
 	0    1    1    0   
 $EndComp
 $Comp
-L 27c322-rescue:R R1
+L Device:R R1
 U 1 1 55F954FE
 P 6050 1150
 F 0 "R1" V 6130 1150 50  0000 C CNN
 F 1 "10K" V 6050 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 1150 30  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5980 1150 30  0001 C CNN
 F 3 "" H 6050 1150 30  0000 C CNN
 	1    6050 1150
 	0    1    1    0   
@@ -399,13 +398,13 @@ A19
 Text Label 5700 1550 0    60   ~ 0
 A20
 $Comp
-L 27c322-rescue:MMBT3906 Q1
+L Transistor_BJT:2N3906 Q1
 U 1 1 574202DB
 P 3450 5350
 F 0 "Q1" H 3650 5425 50  0000 L CNN
-F 1 "MMBT3906" H 3650 5350 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3650 5275 50  0000 L CIN
-F 3 "" H 3450 5350 50  0000 L CNN
+F 1 "2N3906TAR" H 3650 5350 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 3650 5275 50  0000 L CIN
+F 3 "https://www.mouser.de/datasheet/2/308/2N3906_D-1801672.pdf" H 3450 5350 50  0001 L CNN
 	1    3450 5350
 	1    0    0    1   
 $EndComp
@@ -418,12 +417,12 @@ Wire Wire Line
 Text Label 2550 5350 0    60   ~ 0
 VCC
 $Comp
-L 27c322-rescue:R R5
+L Device:R R5
 U 1 1 57420594
 P 3000 5350
 F 0 "R5" V 3080 5350 50  0000 C CNN
 F 1 "1K" V 3000 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2930 5350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2930 5350 50  0001 C CNN
 F 3 "" H 3000 5350 50  0000 C CNN
 	1    3000 5350
 	0    1    1    0   
@@ -433,12 +432,12 @@ Wire Wire Line
 Wire Wire Line
 	3550 5550 3550 5650
 $Comp
-L 27c322-rescue:R R4
+L Device:R R4
 U 1 1 57420707
 P 3550 5900
 F 0 "R4" V 3630 5900 50  0000 C CNN
 F 1 "10K" V 3550 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 5900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3480 5900 50  0001 C CNN
 F 3 "" H 3550 5900 50  0000 C CNN
 	1    3550 5900
 	1    0    0    -1  
@@ -514,12 +513,12 @@ Wire Wire Line
 Wire Wire Line
 	5500 1050 5500 950 
 $Comp
-L 27c322-rescue:R R3
+L Device:R R3
 U 1 1 5C784D7C
 P 6050 1550
 F 0 "R3" V 6130 1550 50  0000 C CNN
 F 1 "10K" V 6050 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 1550 30  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5980 1550 30  0001 C CNN
 F 3 "" H 6050 1550 30  0000 C CNN
 	1    6050 1550
 	0    1    1    0   
@@ -555,4 +554,68 @@ Wire Wire Line
 	6300 1350 6300 1150
 Wire Wire Line
 	5500 950  6550 950 
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 60BD58D8
+P 3850 800
+F 0 "JP1" H 3850 1024 50  0000 C CNN
+F 1 "Jumper_3_Open" H 3850 933 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 800 50  0001 C CNN
+F 3 "~" H 3850 800 50  0001 C CNN
+	1    3850 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 950  4100 950 
+Text Label 3950 950  0    50   ~ 0
+A18
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 60BE36D8
+P 3850 1300
+F 0 "JP2" H 3850 1524 50  0000 C CNN
+F 1 "Jumper_3_Open" H 3850 1433 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 1300 50  0001 C CNN
+F 3 "~" H 3850 1300 50  0001 C CNN
+	1    3850 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1450 4100 1450
+Text Label 3950 1450 0    50   ~ 0
+A19
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 60BE9E64
+P 3850 1800
+F 0 "JP3" H 3850 2024 50  0000 C CNN
+F 1 "Jumper_3_Open" H 3850 1933 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 1800 50  0001 C CNN
+F 3 "~" H 3850 1800 50  0001 C CNN
+	1    3850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1950 4100 1950
+Text Label 3950 1950 0    50   ~ 0
+A20
+Text Label 3050 800  0    60   ~ 0
+VCC
+Wire Wire Line
+	3050 800  3350 800 
+Wire Wire Line
+	3350 800  3350 1300
+Wire Wire Line
+	3350 1300 3600 1300
+Connection ~ 3350 800 
+Wire Wire Line
+	3350 800  3600 800 
+Wire Wire Line
+	3350 1300 3350 1800
+Wire Wire Line
+	3350 1800 3600 1800
+Connection ~ 3350 1300
+NoConn ~ 4100 800 
+NoConn ~ 4100 1300
+NoConn ~ 4100 1800
 $EndSCHEMATC
